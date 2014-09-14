@@ -2,12 +2,14 @@
 
 Quick reference to setting up an awesome clojure dev environment.
 
-1. Required reading.
+## Steps
+
+### 1. Required reading.
 - http://dev.solita.fi/2014/03/18/pimp-my-repl.html
 - https://github.com/zcaudate/vinyasa#installation
 - http://thinkrelevance.com/blog/2013/06/04/clojure-workflow-reloaded
 
-2. Set up ~/.lein/project.
+### 2. Set up ~/.lein/project.
 ```clojure
 {:user {:plugins [[cider/cider-nrepl "0.7.0-SNAPSHOT"]]
         :dependencies [[spyscope "0.1.4"]
@@ -46,7 +48,7 @@ Quick reference to setting up an awesome clojure dev environment.
                     [clojure.java.shell sh])]}}
 ```
 
-3. Set up ./project.clj
+### 3. Set up ./project.clj
 ```clojure
   (defproject clojure-starter "0.1.0-SNAPSHOT"
     :url "https://github.com/dqdinh/clojure-starter"
@@ -56,7 +58,7 @@ Quick reference to setting up an awesome clojure dev environment.
                      :source-paths ["dev"]}})
 ```
 
-4. Set up ./dev/user.clj
+### 4. Set up ./dev/user.clj
 ```clojure
   (ns user
     "Tools for interactive development with the REPL. This file should
@@ -69,11 +71,11 @@ Quick reference to setting up an awesome clojure dev environment.
      ))
 ```
 
-5. workflow
+### 5. workflow
 - create new file / make updates to existing file
 - in REPL, run (refresh)
 
-## Useful Lein Shortcuts
+## Useful Shortcuts
 - lein install
 - lein deps
 - lein repl
